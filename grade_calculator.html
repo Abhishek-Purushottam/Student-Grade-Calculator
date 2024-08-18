@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="grade_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Grade Calculator</h1>
+    </header>
+
+    <section id="calculator">
+        <h2>Enter Your Grades</h2>
+        <form id="gradeForm">
+            <label for="subject1">Subject 1:</label>
+            <input type="number" id="subject1" min="0" max="100" required>
+
+            <label for="subject2">Subject 2:</label>
+            <input type="number" id="subject2" min="0" max="100" required>
+
+            <label for="subject3">Subject 3:</label>
+            <input type="number" id="subject3" min="0" max="100" required>
+
+            <label for="subject4">Subject 4:</label>
+            <input type="number" id="subject4" min="0" max="100" required>
+
+            <label for="subject5">Subject 5:</label>
+            <input type="number" id="subject5" min="0" max="100" required>
+
+            <button type="button" onclick="calculateGrade()">Calculate Grade</button>
+        </form>
+
+        <div id="result">
+            <h3>Average Grade: <span id="average"></span></h3>
+            <h3>Grade Letter: <span id="gradeLetter"></span></h3>
+        </div>
+    </section>
+
+    <script src="grade_script.js"></script>
+</body>
+</html>
